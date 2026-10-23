@@ -1,23 +1,363 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Sound wave & Music note for Lumina Player -->
-    <group
-        android:translateX="14"
-        android:translateY="14">
-        <!-- Center Music Note -->
-        <path
-            android:fillColor="#FFFFFF"
-            android:pathData="M34,16 L56,12 C57.66,11.7 59,13.04 59,14.7 L59,45 C56.6,43.75 53.68,43 50.5,43 C42.49,43 36,48.15 36,54.5 C36,60.85 42.49,66 50.5,66 C57.94,66 64,61.42 64,55.5 L64,25 L39,30 L39,53 C36.6,51.75 33.68,51 30.5,51 C22.49,51 16,56.15 16,62.5 C16,68.85 22.49,74 30.5,74 C37.94,74 44,69.42 44,63.5 L44,22 C44,19.24 41.76,17 39,17 L34,17 Z" />
-        <!-- Sound Wave Highlights -->
-        <path
-            android:fillColor="#38BDF8"
-            android:pathData="M69,32 C71.5,35.5 73,39.8 73,44.5 C73,49.2 71.5,53.5 69,57 L66.5,54.5 C68.5,51.7 69.8,48.2 69.8,44.5 C69.8,40.8 68.5,37.3 66.5,34.5 Z" />
-        <path
-            android:fillColor="#BAE6FD"
-            android:pathData="M75,26 C79,31.2 81.5,37.5 81.5,44.5 C81.5,51.5 79,57.8 75,63 L72.5,60.5 C76,55.8 78.2,50.4 78.2,44.5 C78.2,38.6 76,33.2 72.5,28.5 Z" />
-    </group>
+
+    <!-- 1. Ambient Dynamic Cyan-Purple Glow Aura -->
+    <path
+        android:pathData="M 54,19 A 35,35 0 1 0 54,89 A 35,35 0 1 0 54,19"
+        android:fillAlpha="0.30">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="54"
+                android:centerY="54"
+                android:gradientRadius="35"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#38BDF8" />
+                <item android:offset="0.55" android:color="#8B5CF6" />
+                <item android:offset="1.0" android:color="#000F172A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 2. Titanium Audiophile Disc Base (R=28) -->
+    <path
+        android:pathData="M 54,26 A 28,28 0 1 0 54,82 A 28,28 0 1 0 54,26"
+        android:strokeWidth="1.2">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="26"
+                android:startY="26"
+                android:endX="82"
+                android:endY="82"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#141E33" />
+                <item android:offset="0.6" android:color="#0D1526" />
+                <item android:offset="1.0" android:color="#080C17" />
+            </gradient>
+        </aapt:attr>
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="26"
+                android:startY="26"
+                android:endX="82"
+                android:endY="82"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#B238BDF8" />
+                <item android:offset="0.5" android:color="#808B5CF6" />
+                <item android:offset="1.0" android:color="#4D1E293B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Disc Micro-Grooves (R=23 & R=18) -->
+    <path
+        android:pathData="M 54,31 A 23,23 0 1 0 54,77 A 23,23 0 1 0 54,31"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.16"
+        android:strokeColor="#94A3B8" />
+
+    <path
+        android:pathData="M 54,36 A 18,18 0 1 0 54,72 A 18,18 0 1 0 54,36"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.12"
+        android:strokeColor="#38BDF8" />
+
+    <!-- 3. Dynamic Audiophile Equalizer Spectrum Columns (9 Rhythm Columns) -->
+    <!-- Col 1 (x: 29.5..32.5, y: 48..60, h: 12) -->
+    <path
+        android:pathData="M 29.5,49.5 A 1.5,1.5 0 0 1 31,48 A 1.5,1.5 0 0 1 32.5,49.5 L 32.5,58.5 A 1.5,1.5 0 0 1 31,60 A 1.5,1.5 0 0 1 29.5,58.5 Z"
+        android:fillAlpha="0.65">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="31"
+                android:startY="60"
+                android:endX="31"
+                android:endY="48"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#0284C7" />
+                <item android:offset="1.0" android:color="#38BDF8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 2 (x: 35.5..38.5, y: 41..67, h: 26) -->
+    <path
+        android:pathData="M 35.5,42.5 A 1.5,1.5 0 0 1 37,41 A 1.5,1.5 0 0 1 38.5,42.5 L 38.5,65.5 A 1.5,1.5 0 0 1 37,67 A 1.5,1.5 0 0 1 35.5,65.5 Z"
+        android:fillAlpha="0.80">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="37"
+                android:startY="67"
+                android:endX="37"
+                android:endY="41"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#0369A1" />
+                <item android:offset="0.6" android:color="#38BDF8" />
+                <item android:offset="1.0" android:color="#818CF8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 3 (x: 41.5..44.5, y: 33..75, h: 42) -->
+    <path
+        android:pathData="M 41.5,34.5 A 1.5,1.5 0 0 1 43,33 A 1.5,1.5 0 0 1 44.5,34.5 L 44.5,73.5 A 1.5,1.5 0 0 1 43,75 A 1.5,1.5 0 0 1 41.5,73.5 Z"
+        android:fillAlpha="0.90">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="43"
+                android:startY="75"
+                android:endX="43"
+                android:endY="33"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#0369A1" />
+                <item android:offset="0.6" android:color="#38BDF8" />
+                <item android:offset="1.0" android:color="#818CF8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 4 (x: 47.5..50.5, y: 27..81, h: 54) -->
+    <path
+        android:pathData="M 47.5,28.5 A 1.5,1.5 0 0 1 49,27 A 1.5,1.5 0 0 1 50.5,28.5 L 50.5,79.5 A 1.5,1.5 0 0 1 49,81 A 1.5,1.5 0 0 1 47.5,79.5 Z"
+        android:fillAlpha="0.95">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="49"
+                android:startY="81"
+                android:endX="49"
+                android:endY="27"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#4F46E5" />
+                <item android:offset="0.6" android:color="#8B5CF6" />
+                <item android:offset="1.0" android:color="#C084FC" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 5 (x: 53.5..56.5, y: 25..83, h: 58) -->
+    <path
+        android:pathData="M 53.5,26.5 A 1.5,1.5 0 0 1 55,25 A 1.5,1.5 0 0 1 56.5,26.5 L 56.5,81.5 A 1.5,1.5 0 0 1 55,83 A 1.5,1.5 0 0 1 53.5,81.5 Z"
+        android:fillAlpha="0.95">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="55"
+                android:startY="83"
+                android:endX="55"
+                android:endY="25"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#4F46E5" />
+                <item android:offset="0.6" android:color="#8B5CF6" />
+                <item android:offset="1.0" android:color="#C084FC" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 6 (x: 59.5..62.5, y: 29..79, h: 50) -->
+    <path
+        android:pathData="M 59.5,30.5 A 1.5,1.5 0 0 1 61,29 A 1.5,1.5 0 0 1 62.5,30.5 L 62.5,77.5 A 1.5,1.5 0 0 1 61,79 A 1.5,1.5 0 0 1 59.5,77.5 Z"
+        android:fillAlpha="0.90">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="61"
+                android:startY="79"
+                android:endX="61"
+                android:endY="29"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#7C3AED" />
+                <item android:offset="0.6" android:color="#A855F7" />
+                <item android:offset="1.0" android:color="#F472B6" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 7 (x: 65.5..68.5, y: 37..71, h: 34) -->
+    <path
+        android:pathData="M 65.5,38.5 A 1.5,1.5 0 0 1 67,37 A 1.5,1.5 0 0 1 68.5,38.5 L 68.5,69.5 A 1.5,1.5 0 0 1 67,71 A 1.5,1.5 0 0 1 65.5,69.5 Z"
+        android:fillAlpha="0.80">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="67"
+                android:startY="71"
+                android:endX="67"
+                android:endY="37"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#7C3AED" />
+                <item android:offset="0.6" android:color="#A855F7" />
+                <item android:offset="1.0" android:color="#F472B6" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 8 (x: 71.5..74.5, y: 44..64, h: 20) -->
+    <path
+        android:pathData="M 71.5,45.5 A 1.5,1.5 0 0 1 73,44 A 1.5,1.5 0 0 1 74.5,45.5 L 74.5,62.5 A 1.5,1.5 0 0 1 73,64 A 1.5,1.5 0 0 1 71.5,62.5 Z"
+        android:fillAlpha="0.70">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="73"
+                android:startY="64"
+                android:endX="73"
+                android:endY="44"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#9333EA" />
+                <item android:offset="1.0" android:color="#EC4899" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Col 9 (x: 77.5..80.5, y: 49..59, h: 10) -->
+    <path
+        android:pathData="M 77.5,50.5 A 1.5,1.5 0 0 1 79,49 A 1.5,1.5 0 0 1 80.5,50.5 L 80.5,57.5 A 1.5,1.5 0 0 1 79,59 A 1.5,1.5 0 0 1 77.5,57.5 Z"
+        android:fillAlpha="0.55">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="79"
+                android:startY="59"
+                android:endX="79"
+                android:endY="49"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#9333EA" />
+                <item android:offset="1.0" android:color="#EC4899" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 4. Soundwave Resonance Ripples (Dynamic Arcs) -->
+    <path
+        android:pathData="M 27,54 A 27,27 0 0 1 54,27"
+        android:strokeWidth="1.2"
+        android:strokeAlpha="0.35"
+        android:strokeLineCap="round"
+        android:strokeColor="#38BDF8" />
+
+    <path
+        android:pathData="M 81,54 A 27,27 0 0 1 54,81"
+        android:strokeWidth="1.2"
+        android:strokeAlpha="0.35"
+        android:strokeLineCap="round"
+        android:strokeColor="#A855F7" />
+
+    <!-- 5. Sculpted 3D Faceted Rhythm Play Crest -->
+    <!-- Drop Shadow beneath Crest for Depth -->
+    <path
+        android:pathData="M 43,38 L 77,55 L 43,72 Z"
+        android:fillAlpha="0.45"
+        android:fillColor="#000000" />
+
+    <!-- Facet 1: Top-Left Lit Slope -->
+    <path android:pathData="M 44,36 L 68,49 L 53,54 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="44"
+                android:startY="36"
+                android:endX="68"
+                android:endY="54"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#38BDF8" />
+                <item android:offset="0.5" android:color="#818CF8" />
+                <item android:offset="1.0" android:color="#A855F7" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Facet 2: Forward Play Spear Tip -->
+    <path android:pathData="M 68,49 L 78,54 L 68,59 L 53,54 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="53"
+                android:startY="49"
+                android:endX="78"
+                android:endY="59"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#F0F9FF" />
+                <item android:offset="0.4" android:color="#38BDF8" />
+                <item android:offset="1.0" android:color="#0284C7" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Facet 3: Left Inward Spine Ridge -->
+    <path android:pathData="M 44,36 L 53,54 L 44,72 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="44"
+                android:startY="36"
+                android:endX="53"
+                android:endY="72"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#0284C7" />
+                <item android:offset="1.0" android:color="#6366F1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Facet 4: Lower Shadow Wing -->
+    <path android:pathData="M 44,72 L 53,54 L 68,59 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="44"
+                android:startY="54"
+                android:endX="68"
+                android:endY="72"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#4F46E5" />
+                <item android:offset="0.7" android:color="#312E81" />
+                <item android:offset="1.0" android:color="#1E1B4B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Facet 5: Bottom Chamfer Bevel -->
+    <path android:pathData="M 44,72 L 68,59 L 66,62 L 44,74 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="44"
+                android:startY="59"
+                android:endX="68"
+                android:endY="74"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#A855F7" />
+                <item android:offset="1.0" android:color="#6D28D9" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 6. Core Laser Focal Jewel & Aura -->
+    <path
+        android:pathData="M 53,49 A 5,5 0 1 0 53,59 A 5,5 0 1 0 53,49"
+        android:strokeWidth="1.0"
+        android:strokeAlpha="0.8"
+        android:strokeColor="#38BDF8" />
+
+    <path
+        android:pathData="M 53,51 A 3,3 0 1 0 53,57 A 3,3 0 1 0 53,51"
+        android:fillColor="#FFFFFF" />
+
+    <!-- 7. Floating Harmonic Acoustic Sparks -->
+    <path
+        android:pathData="M 47.5,24 A 1.5,1.5 0 1 0 47.5,27 A 1.5,1.5 0 1 0 47.5,24"
+        android:fillColor="#38BDF8" />
+
+    <path
+        android:pathData="M 53.5,21.5 A 1.5,1.5 0 1 0 53.5,24.5 A 1.5,1.5 0 1 0 53.5,21.5"
+        android:fillColor="#F0F9FF" />
+
+    <path
+        android:pathData="M 59.5,25.5 A 1.5,1.5 0 1 0 59.5,28.5 A 1.5,1.5 0 1 0 59.5,25.5"
+        android:fillColor="#C084FC" />
+
+    <path
+        android:pathData="M 78,52.2 A 1.8,1.8 0 1 0 78,55.8 A 1.8,1.8 0 1 0 78,52.2"
+        android:fillColor="#38BDF8" />
+
+    <path
+        android:pathData="M 78,50.5 A 3.5,3.5 0 1 0 78,57.5 A 3.5,3.5 0 1 0 78,50.5"
+        android:strokeWidth="0.6"
+        android:strokeAlpha="0.6"
+        android:strokeColor="#38BDF8" />
+
 </vector>

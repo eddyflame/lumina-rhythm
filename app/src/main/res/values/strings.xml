@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lumina Player</string>
-    <string name="app_subtitle">Audiophile Local Music Player</string>
+    <string name="app_name">Lumina Rhythm</string>
+    <string name="app_subtitle">Audiophile Local Music Player · Pure Acoustic Rhythm</string>
     <string name="app_name_upper">LUMINA</string>
     <string name="widget_description">Compact desktop &amp; lock screen music playback controls</string>
 
@@ -163,7 +163,7 @@
     <string name="rescan_library">Rescan Music Library</string>
     <string name="select_music_folder">Select Music Folder</string>
     <string name="permission_title">Music Library Access</string>
-    <string name="permission_desc">Lumina Player needs storage access to scan and play your local audio files. Zero network tracking, purely offline.</string>
+    <string name="permission_desc">Lumina Rhythm needs storage access to scan and play your local audio files. Zero network tracking, purely offline.</string>
     <string name="grant_permission">Grant Permission</string>
     <string name="no_songs_title">No Music Found</string>
     <string name="no_songs_desc">Place audio files on your device or tap Rescan to refresh your library.</string>
@@ -174,5 +174,5 @@
     <string name="app_version">Version</string>
     <string name="author">Author</string>
     <string name="author_name">eddy</string>
-    <string name="about_desc">Audiophile Local Music Player. Purely offline, zero tracking.</string>
+    <string name="about_desc">Audiophile Local Music Player · Pure Acoustic Rhythm. Purely offline, zero tracking.</string>
 </resources>

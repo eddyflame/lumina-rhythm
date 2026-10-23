@@ -149,7 +149,7 @@ class LuminaAudioService : MediaSessionService() {
                 getString(R.string.app_name),
                 NotificationManager.IMPORTANCE_LOW
             ).apply {
-                description = "Lumina Player lock screen playback controls"
+                description = "Lumina Rhythm lock screen playback controls"
                 setShowBadge(false)
                 lockscreenVisibility = Notification.VISIBILITY_PUBLIC
                 setSound(null, null)

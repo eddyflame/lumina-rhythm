@@ -232,7 +232,7 @@ fun SettingsBottomSheet(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // About Lumina Player and Author Information (Author eddy)
+            // About Lumina Rhythm and Author Information (Author eddy)
             val context = LocalContext.current
             val versionName = remember {
                 runCatching { context.packageManager.getPackageInfo(context.packageName, 0).versionName }.getOrNull() ?: "0.1.7"

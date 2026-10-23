@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lumina 音乐</string>
-    <string name="app_subtitle">发烧级纯本地音乐播放器</string>
+    <string name="app_name">韵律</string>
+    <string name="app_subtitle">流光静听 · 发烧级纯本地音乐</string>
     <string name="app_name_upper">LUMINA</string>
     <string name="widget_description">精简桌面与锁屏音乐播放微件</string>
 
@@ -163,7 +163,7 @@
     <string name="rescan_library">重新扫描曲库</string>
     <string name="select_music_folder">添加音乐文件夹</string>
     <string name="permission_title">曲库访问权限</string>
-    <string name="permission_desc">Lumina Player 需要访问设备存储以扫描和播放您的本地音乐。纯离线运行，绝无隐私追踪。</string>
+    <string name="permission_desc">「韵律」需要访问设备存储以扫描和播放您的本地音乐。纯离线运行，绝无隐私追踪。</string>
     <string name="grant_permission">授予权限</string>
     <string name="no_songs_title">未扫描到音频文件</string>
     <string name="no_songs_desc">请在设备中放入音频文件，或点击重新扫描以刷新曲库。</string>
@@ -174,5 +174,5 @@
     <string name="app_version">版本号</string>
     <string name="author">开发者</string>
     <string name="author_name">eddy</string>
-    <string name="about_desc">发烧级纯本地音乐播放器，纯离线无隐私追踪。</string>
+    <string name="about_desc">发烧级纯本地音乐播放器，静听流光，纯粹韵律。纯离线无隐私追踪。</string>
 </resources>
