@@ -1,8 +1,8 @@
-# 韵律 (Lumina Rhythm)
+# Lumina Rhythm
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-0284C7?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/版本-1.4.0-blueviolet?style=for-the-badge" alt="版本 1.4.0" />
+  <img src="https://img.shields.io/badge/版本-1.4.1-blueviolet?style=for-the-badge" alt="版本 1.4.1" />
   <img src="https://img.shields.io/badge/Kotlin-2.2.20-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin 2.2" />
   <img src="https://img.shields.io/badge/Jetpack_Compose-Material_3-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Material 3" />
   <img src="https://img.shields.io/badge/Media3-ExoPlayer_1.5-emerald?style=for-the-badge" alt="AndroidX Media3" />
